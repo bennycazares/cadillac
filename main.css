@@ -13,7 +13,11 @@ ul li{
   padding-left: 20px;
   text-align: center;
 }
+li a {
+  color: black;
+  text-decoration: none;
 
+}
 
 img.logo{
   width: auto;
@@ -43,6 +47,10 @@ img.logo{
     color: white;
     font-weight: bold;
     font-family: 'Cambay', sans-serif;
+}
+.center2 a{
+  color: white;
+  text-decoration: none;
 }
 .center2 {
     position: absolute;
