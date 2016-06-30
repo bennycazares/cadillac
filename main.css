@@ -1,3 +1,4 @@
+
 .row {
   text-align: center;
   padding-top: 50px;
@@ -28,9 +29,33 @@ img.logo{
   background-image: url('images/discover.jpg');
   position: relative;
   text-align: center;
-  background-size: cover;
+  /*background-size: cover;*/
   padding:100px;
+  width: 100%;
   padding-bottom: 120px;
+}
+.center {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Cambay', sans-serif;
+}
+.center2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: white;
+    border: 1px solid white;
+    padding: 4px;
+}
+.container3 {
+    position: relative;
 }
 .opp1{
   font-family: 'Cambay', sans-serif;
@@ -43,11 +68,21 @@ img.logo{
   border: 1px solid white;
   font-size: 12px;
   /*border-color: white;*/
-  padding: 8px;
+  /*padding: 8px;
   padding-left: 10px;
   padding-right: 10px;
   margin-left: 390px;
-  margin-right: 390px;
+  margin-right: 390px;*/
+}
+h4{
+  font-family: 'Cambay', sans-serif;
+  font-weight: lighter;
+  color: white;
+  border: 1px solid white;
+  font-size: 12px;
+  /*border-color: white;*/
+  padding: 8px;
+
 }
 /*img {
   width: 100%;
@@ -73,7 +108,7 @@ h2:before {
   display: block;
   height: 3px;
   position: absolute;
-    top: 50%;
+  top: 50%;
   width: 100%;
 }
 h2:before {
@@ -85,9 +120,9 @@ h2:before {
 .footer{
   text-align: center;
   padding-top: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   font-family: 'Cambay', sans-serif;
-  border-right: red
+  margin-bottom: 20px;
   }
 .footer li{
   text-align: center;
@@ -97,13 +132,54 @@ h2:before {
   padding-right: 15px;
 }
 
-/* For devices smaller than 360px: */
-/*body {
-    background-image: url('images/small.jpg');
-}
-/* For width 360px and larger: */
-/*@media only screen and (min-width: 400px) {
-    body {
-        background-image: url('images/discover.jpg');
-    }
-}*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 720px) {
+
+  ul li{
+    display: inline-flex;
+    padding-left: 0px;
+    padding-bottom: 5px;
+    font-size: 5px;
+  }
+  .row{
+    padding-top: 20px;
+    padding-right: 30px;
+  }
+  img.logo{
+    padding-top: 5px;
+    width: 50px;
+    padding-left: 0px;
+
+  }
+  .center{
+    top: 35%;
+    left: 50%;
+    font-size: 8px;
+  }
+  .center2{
+    top: 60%;
+  }
+  .emblem{
+    padding-bottom: 10px;
+  }
+  h2 span{
+    font-size: 20px
+  }
+  .footer {
+    padding-top: 10px;
+    padding-left: 2px;
+  }
+
+  .footer li{
+    font-size: 8px;
+    border-color: white;
+    display: inline-flex;
+    text-align: center;
+    padding-right: 2px;
+  }
+ .center{
+   font-size: 8px;
+ }
+ .center2{
+   font-size: 5px;
+ }
+ /*@media only screen and (min-device-width : 7201px) and (max-device-width : 720px)*/
